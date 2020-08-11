@@ -1,0 +1,32 @@
+
+.gear {
+  margin-top: -66px;
+  background: #9A9A9A;
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    background: #6E6E6E;
+  }
+  &:hover + .gear__items-list{
+    opacity: 1;
+  }
+}
+
+
+.items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.gear__items-list {
+  height: 120px;
+  opacity: 0;
+}

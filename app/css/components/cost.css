@@ -1,0 +1,22 @@
+.cost__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 24px; }
+
+.cost__value {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #151515; }
+
+.cost__cost {
+  margin-right: 13px; }
