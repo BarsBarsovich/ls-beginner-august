@@ -1,0 +1,36 @@
+.accordion {
+  background: url("../img/girl.png") center center /cover no-repeat;
+
+  &__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &__slide {
+    &-title {
+      margin-top: 115px;
+      margin-left: 84px;
+      font-weight: bold;
+      font-size: 48px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+
+      &-container {
+        width: 50%;
+        height: 100%;
+      }
+    }
+
+    &-tabs {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+
+}
