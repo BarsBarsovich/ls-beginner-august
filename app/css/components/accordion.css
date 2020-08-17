@@ -26,8 +26,8 @@
       width: 50%;
       height: 100%; }
   .accordion__slide-tabs {
-    height: 100%;
     width: 50%;
+    height: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

@@ -1,17 +1,30 @@
 const tabs = document.querySelectorAll('.sizes__item-title');
 
-tabs.forEach((tab) => {
-    tab.addEventListener('click', function ($event) {
-        const parentLi = $event.target.parentElement;
-        const isActive = parentLi.querySelector('.sizes__item-description').classList.contains('sizes__item-description_active');
+Array.from(tabs).map(item => {
+    item.addEventListener('click', function ($event) {
+        console.log($event.target.textContent);
 
-        isActive ? parentLi.querySelector('.sizes__item-description').classList.remove('sizes__item-description_active') :
-            parentLi.querySelector('.sizes__item-description').classList.add('sizes__item-description_active');
+        if ($event.target.tagName === 'DIV') {
+            let parentElement = $event.target.parentElement;
+            const descriptionElement = parentElement.querySelector('.sizes__item-description');
+            fillActiveClass(descriptionElement);
+        }
 
-        document.querySelectorAll('.sizes__item').forEach(item => {
-            if (item.textContent !== parentLi.textContent) {
-                item.querySelector('.sizes__item-description').classList.remove('sizes__item-description_active');
+        if ($event.target.tagName === 'SPAN') {
+            let parentElement = $event.target.parentElement.parentElement;
+            fillActiveClass(parentElement);
+        }
+
+        document.querySelectorAll('.sizes__item-description').forEach(item => {
+            if (item.parentElement.querySelector('.sizes__item-title').textContent !== $event.target.textContent) {
+                item.classList.remove('sizes__item-description_active');
             }
         });
     });
 });
+
+function fillActiveClass(el) {
+    el.classList.contains('sizes__item-description_active') ?
+        el.classList.remove('sizes__item-description_active')
+        : el.classList.add('sizes__item-description_active');
+}

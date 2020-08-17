@@ -24,13 +24,12 @@
       }
     }
 
-    &-tabs {
-      height: 100%;
+    &-tabs{
       width: 50%;
+      height: 100%;
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
     }
   }
-
 }

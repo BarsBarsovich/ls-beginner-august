@@ -15,8 +15,8 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
     height: 100%;
-    padding: 0;
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
   .sizes__item {
     position: relative;
     min-width: 90px;
@@ -41,16 +41,16 @@
         font-size: 36px;
         color: #FFFFFF;
         position: absolute;
-        left: 0;
         bottom: 0;
+        left: 0;
         -webkit-transform: rotateZ(-90deg);
             -ms-transform: rotate(-90deg);
                 transform: rotateZ(-90deg);
         -webkit-transform-origin: 0 0;
             -ms-transform-origin: 0 0;
                 transform-origin: 0 0;
-        white-space: nowrap;
-        line-height: 80px; }
+        line-height: 80px;
+        white-space: nowrap; }
     .sizes__item-description {
       background: rgba(51, 53, 55, 0.9);
       max-width: 0;
